@@ -6,12 +6,12 @@ use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class Heading extends Component
+class Gallery extends Component
 {
-    public $title;
-    public function __construct($title)
+    public $images;
+    public function __construct($images = [])
     {
-        $this->title = $title;
+        $this->images = $images;
     }
 
     /**
@@ -19,6 +19,6 @@ class Heading extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.heading');
+        return view('components.gallery');
     }
 }

@@ -1,5 +1,6 @@
 {{-- navbar.blade.php --}}
-<nav id="navbar" class="fixed top-0 left-0 w-full bg-transparent shadow-md z-50 transition-all duration-300">
+<nav id="navbar"
+    class="max-width: 100% box-sizing: border-box fixed top-0 left-0 w-full bg-transparent shadow-md z-50 transition-all duration-300">
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-20">
@@ -13,11 +14,12 @@
             <!-- Desktop Menu -->
             <div class="hidden lg:flex items-center space-x-8 text-[18px]">
                 <a href="#about"
-                    class="text-white scroll-smooth hover:text-[#FF8FA4]  transition-colors duration-200">About</a>
-                <a href="#" class="text-white hover:text-[#FF8FA4] transition-colors duration-200">Features</a>
-                <a href="#" class="text-white hover:text-[#FF8FA4] transition-colors duration-200">Gallery</a>
-                <a href="#" class="text-white hover:text-[#FF8FA4] transition-colors duration-200">Product</a>
-                <a href="#" class="text-white hover:text-[#FF8FA4] transition-colors duration-200">Contact</a>
+                    class="text-[#272635] scroll-smooth hover:text-[#FF8FA4]  transition-colors duration-200">About</a>
+                <a href="#"
+                    class="text-[#272635] hover:text-[#FF8FA4] transition-colors duration-200">Features</a>
+                <a href="#" class="text-[#272635] hover:text-[#FF8FA4] transition-colors duration-200">Gallery</a>
+                <a href="#" class="text-[#272635] hover:text-[#FF8FA4] transition-colors duration-200">Product</a>
+                <a href="#" class="text-[#272635] hover:text-[#FF8FA4] transition-colors duration-200">Contact</a>
                 <a href="{{ route('login') }}"
                     class="inline-flex items-center justify-center px-6 py-2 border border-transparent rounded-lg text-base font-medium text-white bg-[#FF8FA4] hover:bg-[#EF557A] transition-colors duration-300">
                     Login
