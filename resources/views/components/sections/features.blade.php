@@ -1,4 +1,4 @@
-<div class="features p-5 rounded-t-3xl bg-[#FF8FA4] flex justify-center items-center px-4 mt-[100px]">
+<div id="features" class="features p-5 rounded-t-3xl bg-[#FF8FA4] flex justify-center items-center px-4 mt-[100px]">
     <div class="content w-full max-w-[1200px] text-center ">
         <h1 class="text-3xl md:text-5xl  font-semibold text-[#292352] mb-5">Features</h1>
         <p class="text-[#6A6A6A] px-2">

@@ -1,4 +1,4 @@
-<div class="section-product mt-[100px] px-4 md:px-6 lg:px-8">
+<div id="product" class="section-product mt-[100px] px-4 md:px-6 lg:px-8">
     <div class ="title">
         <x-heading title="product"></x-heading>
 
@@ -26,7 +26,8 @@
 
             <!-- Button Container -->
             <div class="flex justify-center">
-                <x-button title="Check Price" class="w-full md:w-auto " />
+                <x-button href="https://drive.google.com/file/d/16iuYzjm0OCeBatZ9gq801BOkQInhU2kV/view"
+                    title="Check Price" class="w-full md:w-auto " />
             </div>
         </div>
     </div>

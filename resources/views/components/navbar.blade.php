@@ -13,13 +13,25 @@
 
             <!-- Desktop Menu -->
             <div class="hidden lg:flex items-center space-x-8 text-[18px]">
-                <a href="#about"
-                    class="text-[#272635] scroll-smooth hover:text-[#FF8FA4]  transition-colors duration-200">About</a>
-                <a href="#"
-                    class="text-[#272635] hover:text-[#FF8FA4] transition-colors duration-200">Features</a>
-                <a href="#" class="text-[#272635] hover:text-[#FF8FA4] transition-colors duration-200">Gallery</a>
-                <a href="#" class="text-[#272635] hover:text-[#FF8FA4] transition-colors duration-200">Product</a>
-                <a href="#" class="text-[#272635] hover:text-[#FF8FA4] transition-colors duration-200">Contact</a>
+                <div x-data="{
+                    scrollTo: (targetId) => {
+                        const element = document.getElementById(targetId);
+                        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                }" class="space-x-8">
+                    <a href="#about" @click.prevent="scrollTo('about')"
+                        class="text-[#272635] hover:text-[#FF8FA4] transition-colors duration-200">
+                        About
+                    </a>
+                    <a href="#features" @click.prevent="scrollTo('features')"
+                        class="text-[#272635] hover:text-[#FF8FA4] transition-colors duration-200">Features</a>
+                    <a href="#gallery" @click.prevent="scrollTo('gallery')"
+                        class="text-[#272635] hover:text-[#FF8FA4] transition-colors duration-200">Gallery</a>
+                    <a href="#product" @click.prevent="scrollTo('product')"
+                        class="text-[#272635] hover:text-[#FF8FA4] transition-colors duration-200">Product</a>
+                    <a href="#footer" @click.prevent="scrollTo('footer')"
+                        class="text-[#272635] hover:text-[#FF8FA4] transition-colors duration-200">Contact</a>
+                </div>
                 <a href="{{ route('login') }}"
                     class="inline-flex items-center justify-center px-6 py-2 border border-transparent rounded-lg text-base font-medium text-white bg-[#FF8FA4] hover:bg-[#EF557A] transition-colors duration-300">
                     Login

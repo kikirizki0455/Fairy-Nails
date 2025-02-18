@@ -1,4 +1,4 @@
-<div class="gallery mt-[100px]">
+<div id="gallery" class="gallery mt-[100px]">
     <x-heading title="Our Gallery"></x-heading>
     <x-gallery :images="[
         'assets/images/img1.webp',

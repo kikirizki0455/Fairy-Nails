@@ -12,7 +12,6 @@
             }"
                 class="flex gap-[10px] items-stretch max-h-lg flex-nowrap p-4 justify-center content-between">
 
-
                 <!-- Gambar Pertama -->
                 <div class="mb-10 relative">
                     <!-- Skeleton Loader -->
@@ -23,7 +22,7 @@
                     </div>
                     <!-- Gambar LazyLoad -->
                     <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                        data-src="{{ asset('assets/images/img2.webp') }}" alt="about1"
+                        data-src="{{ url('assets/images/img2.webp') }}" alt="about1"
                         class="lazyload h-full rounded-md max-h-[360px] w-[260px] sm:w-[260px] sm:h-[360px] md:max-w-[260px] md:h-[360px] lg:w-[260px] lg:h-[370px] object-cover duration-500">
                 </div>
 
@@ -38,7 +37,7 @@
                     </div>
                     <!-- Gambar LazyLoad -->
                     <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                        data-src="{{ asset('assets/images/img3.webp') }}" alt="about1"
+                        data-src="{{ url('assets/images/img3.webp') }}" alt="about1"
                         class="lazyload h-full rounded-md max-h-[360px] w-[260px] sm:w-[260px] sm:h-[360px] md:max-w-[260px] md:h-[360px] lg:w-[260px] lg:h-[370px] object-cover duration-500">
                 </div>
             </div>

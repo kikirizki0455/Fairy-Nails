@@ -9,9 +9,11 @@ use Illuminate\View\Component;
 class button extends Component
 {
     public $title;
-    public function __construct($title)
+    public $href;
+    public function __construct($title,$href)
     {
         $this->title = $title;
+        $this->href = $href;
     }
 
     /**

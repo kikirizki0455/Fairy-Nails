@@ -4,6 +4,7 @@
         <x-heading title="Location"></x-heading>
         <!-- Tambahkan placeholder map -->
         <div class="relative mt-12">
+
             {{-- skeleton loader --}}
             <div x-show ="!imageLoaded[0]" class="absolute inset-0 skeleton rounded-md">
                 <div
